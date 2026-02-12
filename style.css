@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background: #f6efe9;
+  color: #6b4f4f;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.buttons button,
+.back {
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.buttons button:hover,
+.back:hover {
+  transform: scale(1.08);
+}
+
+.yes {
+  background: #e89aaa;
+  color: white;
+}
+
+.no {
+  background: #e6d6cc;
+}
+
+.gif {
+  width: 260px;
+  margin-top: 1rem;
+}
+
+.eyes {
+  width: 120px;
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+  width: 220px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: #9ec6e8;
+  animation: load 5s linear forwards;
+}
+
+@keyframes load {
+  to { width: 100%; }
+}
+
+/* Floating hearts */
+.hearts::before {
+  content: "💗 💕 💖 💗 💕";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  animation: float 10s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes float {
+  from {
+    transform: translate(-50%, 0);
+  }
+  to {
+    transform: translate(-50%, -120vh);
+  }
+}
