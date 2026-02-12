@@ -65,6 +65,11 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.loading-image {
+  width: 120px; /* adjust if needed */
+  margin-bottom: 1.5rem;
+}
+
 .progress-bar {
   width: 220px;
   height: 10px;
@@ -170,5 +175,6 @@ p {
     transform: scale(1.08);
   }
 }
+
 
 
