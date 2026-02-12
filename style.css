@@ -32,8 +32,8 @@ p {
 .buttons button,
 .back {
   font-family: inherit;
-  font-size: 1.5rem;
-  padding: 0.7rem 2rem;
+  font-size: 1.8rem;
+  padding: 1rem 2.6rem;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -104,3 +104,4 @@ p {
     transform: translate(-50%, -120vh);
   }
 }
+
