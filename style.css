@@ -132,4 +132,43 @@ p {
   }
 }
 
+/* Button idle pulse */
+.buttons button,
+.back {
+  animation: buttonIdle 3s ease-in-out infinite;
+}
+
+/* Hover animation */
+.buttons button:hover,
+.back:hover {
+  animation: buttonHover 0.6s ease-in-out;
+  box-shadow: 0 0 12px rgba(232, 154, 170, 0.6);
+}
+
+/* Idle breathing effect */
+@keyframes buttonIdle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hover bounce */
+@keyframes buttonHover {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
 
